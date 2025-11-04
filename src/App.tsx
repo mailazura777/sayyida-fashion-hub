@@ -9,6 +9,10 @@ import { DashboardLayout } from "./components/DashboardLayout";
 import Login from "./pages/Login";
 import Dashboard from "./pages/Dashboard";
 import Penjualan from "./pages/Penjualan";
+import Pengeluaran from "./pages/Pengeluaran";
+import Kerugian from "./pages/Kerugian";
+import Asset from "./pages/Asset";
+import Settings from "./pages/Settings";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -44,7 +48,7 @@ const App = () => (
             <Route path="/pengeluaran" element={
               <ProtectedRoute>
                 <DashboardLayout>
-                  <div>Pengeluaran - Coming soon</div>
+                  <Pengeluaran />
                 </DashboardLayout>
               </ProtectedRoute>
             } />
@@ -52,7 +56,7 @@ const App = () => (
             <Route path="/kerugian" element={
               <ProtectedRoute>
                 <DashboardLayout>
-                  <div>Kerugian - Coming soon</div>
+                  <Kerugian />
                 </DashboardLayout>
               </ProtectedRoute>
             } />
@@ -60,7 +64,7 @@ const App = () => (
             <Route path="/asset" element={
               <ProtectedRoute>
                 <DashboardLayout>
-                  <div>Asset - Coming soon</div>
+                  <Asset />
                 </DashboardLayout>
               </ProtectedRoute>
             } />
@@ -68,7 +72,7 @@ const App = () => (
             <Route path="/laporan" element={
               <ProtectedRoute>
                 <DashboardLayout>
-                  <div>Laporan Laba Rugi - Coming soon</div>
+                  <div className="text-center py-12">Coming soon - Laporan Laba Rugi</div>
                 </DashboardLayout>
               </ProtectedRoute>
             } />
@@ -76,7 +80,7 @@ const App = () => (
             <Route path="/karyawan" element={
               <ProtectedRoute>
                 <DashboardLayout>
-                  <div>Karyawan - Coming soon</div>
+                  <div className="text-center py-12">Coming soon - Karyawan</div>
                 </DashboardLayout>
               </ProtectedRoute>
             } />
@@ -84,7 +88,7 @@ const App = () => (
             <Route path="/slip-gaji" element={
               <ProtectedRoute>
                 <DashboardLayout>
-                  <div>Slip Gaji - Coming soon</div>
+                  <div className="text-center py-12">Coming soon - Slip Gaji</div>
                 </DashboardLayout>
               </ProtectedRoute>
             } />
@@ -92,7 +96,7 @@ const App = () => (
             <Route path="/settings" element={
               <ProtectedRoute>
                 <DashboardLayout>
-                  <div>Settings - Coming soon</div>
+                  <Settings />
                 </DashboardLayout>
               </ProtectedRoute>
             } />

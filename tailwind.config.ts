@@ -22,6 +22,12 @@ export default {
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
+          hover: "hsl(var(--primary-hover))",
+        },
+        fashion: {
+          pink: "hsl(var(--fashion-pink))",
+          "pink-light": "hsl(var(--fashion-pink-light))",
+          "pink-dark": "hsl(var(--fashion-pink-dark))",
         },
         secondary: {
           DEFAULT: "hsl(var(--secondary))",
